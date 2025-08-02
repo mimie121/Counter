@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  background-color: #455564;
+  color: #4ed6e2;
+  font-family: Orbitron;
+}
+
+.container {
+  width: 20%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .buttons button {
+  margin-right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+.header button {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 60px;
+}
+.header button:active {
+  background-color: #3f4e5c;
+}
+
+.counter .circle {
+  border: 5px solid #4ed6e2;
+  background-color: #313b44;
+  border-radius: 50%;
+  height: 20rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 4rem;
+  cursor: pointer;
+  user-select: none;
+}
+.counter .circle:active {
+  background-color: rgb(48, 54, 59);
+}
+.counter .circle h1 {
+  transform: translateY(30px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+    padding: 0 50px;
+  }
+}
